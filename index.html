@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Agregar Materialize al proyecto-->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Importar inoconos de FontAwesome y materialize-->
+    <link href="./fonts/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <link href="./css/materialicons.css" rel="stylesheet" type="text/css" />
+    <title>ROSAELL</title>
+
+</head>
+<body>
+    <!--Barrra Superior-->
+
+    <div class="navbar-fixed">
+        
+        <nav class="grey darken-3">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">ROSAELL</a>
+    
+                <!--Icono para el menu Responsivo-->
+                    <!--La clase sidenav trigger hace que desaparesca en dispositivos grandes-->
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                    <i class="fas fa-bars"></i>
+                </a>
+    
+                <!--Opciones del Menu-->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Mujeres</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Ingresar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  
+
+    <!--lista de los menu en mobil la clase sidenav hace que se oculte el menu-->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="#">Mujeres</a></li>
+        <li><a href="#">Hombre</a></li>
+        <li><a href="#">Niños</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">Ingresar</a></li>
+    </ul>
+
+
+    <!--JavaScript al final del body para optimizar la carga-->
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+
+    <!--Script para inicializar todos los javaScript-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
