@@ -60,15 +60,73 @@
 
     <!--Slider Principal-->
     <div class="contenedorSuperior">
+
+        <div class="container">
+            <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="./img/banner.jpg">
+                  </li>
+                  <li>
+                    <img src="./img/banner2.jpg">
+                    <div class="caption left-align">
+                      <h3>ROSAELL</h3>
+                      <h5 class="light grey-text text-lighten-3">De todo un poco</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/banner3.jpg">
+                  </li>
+                  <li>
+                    <img src="./img/banner4.jpg">
+                    <div class="caption center-align">
+                      <h3>Te traemos lo mejor en moda</h3>
+                      <h5 class="light grey-text text-lighten-3">y al mejor precio.</h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>    
+        </div>
+
         <div class="contenedorFondoSuperior">
             <h1><span>Ofertas</span></h1>
             <span class="Submensaje">de verano</span>
             <a href="#" class="button">Conocelas ya!</a>
-        </div>   
-
- 
+        </div> 
     </div>
 
+    <!--Fin slider-->
+
+    <!--Div de titulo 1-->
+
+    <div id="titulo1" class="center" style="background-color: #bdbdbd;">
+        <div class="row" >
+            <div class="col s12"><b>TITULO</b></div>
+        </div>
+
+    </div>
+     <!-- Fin Div de titulo-->
+
+    <!--Div de titulo 2-->
+    <div class="container">
+        <div class="center">
+            <div class="row">
+                <div class="col s12" style="font-size: 35px;">T I T U L O </div>
+            </div>
+            <div class="row">
+                <div class="col s1  m2 l2"><p></p></div>
+                <div class="col s10 m8 l8"><p><hr></p></div>
+                <div class="col 1   m2 l2"><p></p></div>
+            </div>
+            <div class="row">
+                <div class="col s12" style="font-size: 30px;"><p> U n    P a r r a f o</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fin Div de titulo 2-->
+     
 
 
     <!--JavaScript al final del body para optimizar la carga-->
@@ -76,8 +134,12 @@
 
     <!--Script para inicializar todos los javaScript-->
     <script>
+        var options={};
         document.addEventListener('DOMContentLoaded', function () {
-            M.AutoInit();
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, options);
+            
+            //M.AutoInit();
         });
     </script>
 </body>

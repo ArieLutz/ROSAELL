@@ -17,9 +17,9 @@ html, body{
 }
 
 .contenedorFondoSuperior{
-    position: absolute;
-    top: 50%;   
-    left: 50%;
+    position: fixed;
+    top: 30%;   
+    left: 65%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: black;
@@ -58,3 +58,12 @@ html, body{
     opacity: .6;
 }
 /*Fin Personalizacion del banner superior*/
+
+/*Titulo1*/
+
+#titulo1{
+    -webkit-box-shadow: 4px 38px 55px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 38px 55px -27px rgba(0,0,0,0.75);
+    box-shadow: 4px 38px 55px -27px rgba(0,0,0,0.75);
+}
+/*Fin titulo1*/
