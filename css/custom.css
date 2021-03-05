@@ -17,7 +17,7 @@ html, body{
 }
 
 .contenedorFondoSuperior{
-    position: fixed;
+    position:absolute;
     top: 30%;   
     left: 65%;
     transform: translate(-50%, -50%);
@@ -67,3 +67,20 @@ html, body{
     box-shadow: 4px 38px 55px -27px rgba(0,0,0,0.75);
 }
 /*Fin titulo1*/
+
+
+
+/*Carousel*/
+
+.carousel{
+    top: -20%;
+    height: 600px;
+    perspective: 250px;
+}
+
+.carousel .carousel-item{
+    width: 450px;
+}
+.carousel ,.carousel-item{
+    width: 100%;
+}

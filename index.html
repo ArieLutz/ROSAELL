@@ -119,18 +119,42 @@
                 <div class="col 1   m2 l2"><p></p></div>
             </div>
             <div class="row">
-                <div class="col s12" style="font-size: 30px;"><p> U n    P a r r a f o</p></div>
+                <div  class="col s12" style="font-size: 30px;"><p> U n    P a r r a f o</p></div>
             </div>
         </div>
     </div>
-
-
     <!-- Fin Div de titulo 2-->
-     
 
+    <!--Inicio Carousel-->
+    <div class="carousel">
+        <a href="#one" class="carousel-item"><img src="./img/c1.jpeg" alt=""> </a>
+        <a href="#two" class="carousel-item"><img src="./img/c2.jpeg" alt=""> </a>
+        <a href="three" class="carousel-item"><img src="./img/c3.jpeg" alt=""> </a>
+        <a href="#four" class="carousel-item"><img src="./img/c4.jpeg" alt=""> </a>
+        <a href="#five" class="carousel-item"><img src="./img/c5.jpeg" alt=""> </a>
+    </div>
+
+
+
+
+    <!--librerias de Jquery-->
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
 
     <!--JavaScript al final del body para optimizar la carga-->
     <script type="text/javascript" src="./js/materialize.min.js"></script>
+
+
+    <!--Script de carousel-->
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                indicators: true
+            });
+            setInterval(function (){
+                $('.carousel').carousel('next')
+            }, 3000);
+        });
+    </script>
 
     <!--Script para inicializar todos los javaScript-->
     <script>
